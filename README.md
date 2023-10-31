@@ -59,8 +59,8 @@ Nesse repositório encontram-se os seguintes arquivos:
  
 * Pasta com dataset final (junção dos 3 meses) em parquet;
 
-* Notebook databricks e jupyter com análise descritiva inicial (somente para registro);
+* Notebook databricks com análise descritiva inicial (somente para registro da exploração inicial);
 
-* Notebook databricks e jupyter com a transformação dos dados escolhidos (notebook oficial da entrega do tech challenge);
+* Notebook databricks e jupyter com a transformação dos dados escolhidos (**notebook oficial da entrega do tech challenge**);
 
 * Dashboard em PBI com análise final dos dados, **respostas aos pedidos do hospital** e conclusões. 
