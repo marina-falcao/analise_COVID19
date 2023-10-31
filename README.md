@@ -55,12 +55,10 @@ Nesse repositório encontram-se os seguintes arquivos:
 
 * Dicionário dos dados fornecido pelo PNAD;
 
-* Planilhas em csv dos três meses utilizados;
- 
-* Pasta com dataset final (junção dos 3 meses) em parquet;
-
 * Notebook databricks com análise descritiva inicial (somente para registro da exploração inicial);
 
 * Notebook databricks e jupyter com a transformação dos dados escolhidos (**notebook oficial da entrega do tech challenge**);
 
-* Dashboard em PBI com análise final dos dados, **respostas aos pedidos do hospital** e conclusões. 
+* Dashboard em PBI com análise final dos dados, **respostas aos pedidos do hospital** e conclusões.
+  
+* Os microdados analisados estão no link: https://www.ibge.gov.br/estatisticas/investigacoes-experimentais/estatisticas-experimentais/27947-divulgacao-mensal-pnadcovid2.html?edicao=29533&t=downloads  
