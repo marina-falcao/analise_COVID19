@@ -47,7 +47,12 @@ Como poderíamos usar somente 20 questões das 150 disponíveis na pesquisa, seg
 
 # Caminho dos dados
 
-Baixamos as tabelas mensais do site do IBGE e fizemos a leitura com o databricks. Unimos as tabelas dos 3 meses em um único dataset e salvamos com spark no formato parquet. Fizemos a análise descritiva dos dados com SQL. Fizemos a transferência dos dados para o GCS, salvando o arquivo em um bucket. Leitura do dataset em Big Query. No Big Query criamos uma external table e uma view para permitir o acesso aos dados direto com o Power BI. No PBI, importamos os dados para a criação dos gráficos e da apresentação.
+1. Extração das tabelas mensais do site do IBGE diretamente pelo Databricks. Salvamos as tabelas no driver e depois copiamos para o DBFS.
+2. Unimos as tabelas dos 3 meses em um único dataset. Fizemos transformação e análise descritiva dos dados com python e SQL.
+3. Salvamos os dados transformados no DBFS no formato parquet.
+4. Fizemos a transferência dos dados para o GCS, salvando o arquivo em um bucket.
+5. Leitura do dataset em Big Query. No Big Query criamos uma external table e uma view para permitir o acesso aos dados direto com o Power BI.
+6. No PBI, importamos os dados para a criação dos gráficos e da apresentação.
 
 # Entregáveis
 
@@ -55,9 +60,11 @@ Nesse repositório encontram-se os seguintes arquivos:
 
 * Dicionário dos dados fornecido pelo PNAD;
 
+* Notebook databricks e jupyter com o processo de **extração** dos dados; 
+
 * Notebook databricks com análise descritiva inicial (somente para registro da exploração inicial);
 
-* Notebook databricks e jupyter com a transformação dos dados escolhidos (**notebook oficial da entrega do tech challenge**);
+* Notebook databricks e jupyter com a **transformação** dos dados escolhidos;
 
 * Dashboard em PBI com análise final dos dados, **respostas aos pedidos do hospital** e conclusões.
   
