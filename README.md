@@ -49,10 +49,9 @@ Como poderíamos usar somente 20 questões das 150 disponíveis na pesquisa, seg
 
 1. Extração das tabelas mensais do site do IBGE diretamente pelo Databricks. Salvamos as tabelas no driver e depois copiamos para o DBFS.
 2. Unimos as tabelas dos 3 meses em um único dataset. Fizemos transformação e análise descritiva dos dados com python e SQL.
-3. Salvamos os dados transformados no DBFS no formato parquet.
-4. Fizemos a transferência dos dados para o GCS, salvando o arquivo em um bucket.
-5. Leitura do dataset em Big Query. No Big Query criamos uma external table e uma view para permitir o acesso aos dados direto com o Power BI.
-6. No PBI, importamos os dados para a criação dos gráficos e da apresentação.
+3. Fizemos a transferência dos dados para o GCS, salvando o arquivo em um bucket no formato parquet.
+4. No Big Query criamos uma external table apontando para os dados em parquet no GCS e uma view para permitir o acesso aos dados direto com o Power BI.
+5. No PBI, importamos os dados para a criação dos gráficos e da apresentação.
 
 # Entregáveis
 
@@ -60,11 +59,11 @@ Nesse repositório encontram-se os seguintes arquivos:
 
 * Dicionário dos dados fornecido pelo PNAD;
 
-* Notebook databricks e jupyter com o processo de **extração** dos dados; 
+* Notebook com o processo de **extração** dos dados nos formatos dbc e ipynb; 
 
-* Notebook databricks com análise descritiva inicial (somente para registro da exploração inicial);
+* Notebook com análise descritiva inicial (somente para registro da exploração inicial) no formato dbc;
 
-* Notebook databricks e jupyter com a **transformação** dos dados escolhidos;
+* Notebook com a **transformação** dos dados escolhidos nos formatos dbc e ipynb;
 
 * Dashboard em PBI com análise final dos dados, **respostas aos pedidos do hospital** e conclusões.
   
